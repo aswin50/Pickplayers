@@ -1,5 +1,5 @@
-import React, { useEffect, useMemo, useState } from 'react';
-import { Grid, Card, CardContent, Typography, Avatar, Button } from "@mui/material";
+import React, { useEffect, useState } from 'react';
+import { Grid, Button } from "@mui/material";
 import players from "../Data/player.json"
 import PlayerCard from '../Components/Card';
 import { showToast, ToastContainer } from '../Components/snackbar';

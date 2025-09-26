@@ -7,4 +7,5 @@ export default defineConfig({
   build: {
     sourcemap: true, // ✅ ensure source maps in prod build too
   },
+  base: "/Pickplayers/",
 })
