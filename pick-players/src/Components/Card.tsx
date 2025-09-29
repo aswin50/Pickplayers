@@ -8,6 +8,8 @@ import {
   ListItemText,
   ListItemButton,
   Divider,
+  Avatar,
+  ListItemAvatar,
 } from "@mui/material";
 import type { Player } from "../Pages/Picklist";
 import { showToast } from "./snackbar";
@@ -121,6 +123,12 @@ const PlayerCard: React.FC<CardProps> = ({ title, players, onSelect, role }) => 
                       },
                     }}
                   >
+                    <ListItemAvatar>
+                      <Avatar
+                        src={player.team_logo} 
+                        alt={player.name}
+                      />
+                    </ListItemAvatar>
                     <ListItemText
                       primary={player.name}
                       primaryTypographyProps={{
